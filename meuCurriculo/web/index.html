@@ -6,11 +6,89 @@ and open the template in the editor.
 -->
 <html>
     <head>
-        <title>TODO supply a title</title>
+        <title>Página Principal</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <!-- Acesso ao arquivo de estilo do site-->
+        <link href="estilo.css" rel="stylesheet" type="text/css">
+        
+        <!-- Tag para habilita o modo compatibilidade com o Microsoft Edge-->
+        <meta http-equiv="X-UA-Compatible" content="IE-Edge">
+
+        <!-- Configurar o acesso ao arquivo de Estilo do nosso site (Meu arquivo de Estilo)-->
+        <link href="estilo.css" rel="stylesheet" type="text/css">
+
+        <!-- Configurando o Bootstrap: 1º Vou configurar o estilo do Bootstrap-->
+        <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css"> 
+
+        <!-- Configurando o Bootstrap: 2º Vou configurar o estilo dos Grids do Bootstrap-->
+        <link href="bootstrap/css/bootstrap-grid.css" rel="stylesheet" type="text/css">
+
     </head>
     <body>
-        <div>TODO write content</div>
+        <!-- Aqui vamos criar a barra de navegação do nosso site
+      Para isso, nós utilizaremos a classe NAV
+        -->
+        <div class="navbar navbar-expand navbar-light bg-light">
+            <div class="container">
+                <!-- Div que armazenará o logotipo do nosso site-->
+                <div class="navbar-light">
+                    <!-- <a href="index.html" class="navbar-brand">Logo do meu site</a> -->
+                    <a href="index.html" class="navbar-brand"><img src="imagens/minhafoto.jpg"></a>
+                </div>
+
+                <!-- Parte da barra de navegação, que terá o conteúdo do site -->
+                <div class="colapse navbar-collapse">
+                    <!-- Criando a lista de opções que terá na nossa barra de navegação-->
+                    <ul class="navbar mr-auto" style="list-style: none">
+                        <!-- Colocando os itens da nossa lista-->
+                        <li class="nav-item active">
+                            <a class="nav-link" href="index.html"> Carta Resumo</a>
+                        </li>
+
+                        <!-- Criando outro item da nossa lista -->
+                        <li class="nav-link">
+                            <a class="nav-link" href="#">Informações da Empresa</a>
+                        </li>
+
+                        <!-- Criando mais um item da nossa lista-->
+                        <li class="nav-link">
+                            <a class="nav-link" href="#">Formação</a>
+                        </li>
+
+                        <!-- Criando mais um item da lista: Abrira o formulário de cadastro-->
+                        <li class="nav-link">
+                            <a class="nav-link" href="cadastro.hmtl">Cursos</a>
+                        </li>
+
+                        <!-- Criando um item da lista, do tipo DropDown-->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navBarMenu" role="button"
+                               data-toggle="dropdown" aria-haspopup="true">Experiências Profissionais</a>
+
+                            <!-- Colocando os itens do nosso menu de Produtos-->
+                            <div class="dropdown-menu" aria-labelledby="navBarDropdownMenuLink">
+                                <a class="dropdown-item" href="#">Empresas</a>
+                                <a class="dropdown-item" href="#">Área de Ensino</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#">Mimos Di Grassi</a>
+                            </div>
+                        </li>
+                    </ul>
+
+                </div>
+
+            </div>            
+        </div>
+
+        <h1>Meu Curriculo</h1>
+        <p>Meu nome é Rosanete Grassiani dos Santos, nasci em uma pequena cidade no oeste catarinense.</p>
+
+        <!-- Configurando o JQuery, Popper e Javascript do nosso projeto com Bootstrap-->    
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivrrnet/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>    
     </body>
+</body>
 </html>
